@@ -106,7 +106,7 @@ class MainWindow(QWidget):
             results = [age, gender, education_level, title, experience]
             #Creates the model
             getPay = self.createModel(self.df, results)
-            QMessageBox.about(self, "Your Pay", f"Your pay is ${float(getPay):.2f}")
+            QMessageBox.about(self, "Your Pay", f"Your pay is ${float(getPay):,.2f}")
             
     #The model itself
     def createModel(self, df, results):
